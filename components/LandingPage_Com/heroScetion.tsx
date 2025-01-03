@@ -7,8 +7,10 @@ export default function HeroSection() {
     return (
         <div className="bg-black text-white bg-gradient-to-b from-black via-[#200D42] to-[#A46EDB] py-[72px] sm:py-24 relative overflow-hidden max-w-screen mx-auto px-4 pt-20 md:pt-28 text-center h-screen pt-28">
 
-            <AnimatedShinyText />
-            
+            <Link href="/resources">
+                <AnimatedShinyText />
+            </Link>
+                    
             {/* Heading Section */}
             <h1 className="text-4xl md:text-6xl font-bold text-center mb-8 mt-8 max-w-2xl mx-auto">
                 From Zero to Hero: <br />
