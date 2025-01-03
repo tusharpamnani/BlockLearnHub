@@ -1,8 +1,8 @@
 import Footer from "@/components/footer";
-import { FeaturesSection } from "@/components/LandingPage_Com/featureSection";
-import HeroSection from "@/components/LandingPage_Com/heroScetion";
-import { MarqueeDemo } from "@/components/LandingPage_Com/MarqueeDemo";
-import { Navbar } from "@/components/LandingPage_Com/navbar";
+import { FeaturesSection } from "@/components/landing/featureSection";
+import HeroSection from "@/components/landing/Hero";
+import { MarqueeDemo } from "@/components/landing/MarqueeDemo";
+import { Navbar } from "@/components/landing/Nav";
 
 export default function Home() {
   return (
