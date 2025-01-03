@@ -5,19 +5,20 @@ import Link from "next/link";
 
 export default function HeroSection() {
     return (
-        <div className="bg-black text-white bg-gradient-to-b from-black via-[#200D42] to-[#A46EDB] py-[72px] sm:py-24 relative overflow-hidden max-w-screen mx-auto px-4 pt-20 md:pt-28 text-center h-screen pt-28">
-            <div className="absolute h-[375px] w-[750px] sm:w-[1536px] sm:h-[768px] lg:w-[2400px] llg:h-[800px] rounded-[100%] bg-black left-1/2 -translate-x-1/2 border border-[#B48CDE] bg-[radial-gradient(closest-side,#000_82%,#9560EB)] top-[calc(100%-96px)] sm:top-[calc(100%-120px)]"></div>
+        <div className="bg-black text-white bg-gradient-to-b from-black via-[#200D42] to-[#A46EDB] py-[72px] sm:py-24 relative overflow-hidden max-w-screen mx-auto px-4 pt-20 md:pt-28 text-center h-screen">
+            {/* Background Gradient Removed Radial and Added Linear Gradient */}
+            <div className="absolute h-[375px] w-[750px] sm:w-[1536px] sm:h-[768px] lg:w-[2400px] llg:h-[800px] rounded-[100%] bg-black left-1/2 -translate-x-1/2 border border-[#B48CDE] top-[calc(100%-96px)] sm:top-[calc(100%-120px)]"></div>
 
             <AnimatedShinyText />
             
             {/* Heading Section */}
-            <h1 className="text-7xl md:text-6xl font-bold text-center mb-8 mt-8 max-w-2xl mx-auto">
+            <h1 className="text-5xl sm:text-6xl md:text-7xl font-bold text-center mb-6 sm:mb-8 mt-8 max-w-2xl mx-auto">
                 From Zero to Hero: <br />
                 Learn Blockchain Dev for Free
             </h1>
             
             {/* Content Section */}
-            <div className="space-y-6 max-w-2xl mx-auto">
+            <div className="space-y-6 max-w-2xl mx-auto px-4 sm:px-6">
                 <p className="text-center text-sm md:text-xl">
                     Begin your blockchain journey with no upfront cost. No prior experience needed—just a desire to learn!
                 </p>
@@ -45,7 +46,6 @@ export default function HeroSection() {
                     </Button>
                 </Link>
             </div>
-            
         </div>
     );
 }
